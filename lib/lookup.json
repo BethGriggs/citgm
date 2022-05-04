@@ -365,6 +365,7 @@
   "npm": {
     "maintainers": ["nodejs/npm"],
     "prefix": "v",
+    "scripts": ["test-citgm"],
     "skip": ["aix", "s390"]
   },
   "path-to-regexp": {
