@@ -448,7 +448,7 @@
     "flaky": ["ppc", "rhel"],
     "tags": "native",
     "maintainers": "reconbot",
-    "skip": ["win32", "19"], 
+    "skip": ["win32", ">18"], 
     "comment": "Expects real version number so fails on main"
   },
   "socket.io": {
