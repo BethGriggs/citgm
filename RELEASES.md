@@ -31,8 +31,9 @@ $ npm version [<newversion> | major | minor | patch]
 $ git push upstream main --follow-tags
 ```
 
-4. Publish to npm
+4. Publishing to npm is automated
 
-```bash
-$ npm publish
-```
+Pushing the tag in step 3 triggers the
+[publish workflow](.github/workflows/publish.yml). The workflow runs the test
+suite and then publishes to npm with provenance attestation. No manual
+`npm publish` is required.
